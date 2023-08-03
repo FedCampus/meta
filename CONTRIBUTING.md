@@ -131,6 +131,25 @@ When there is a conflict in the Pull Request, merge `main` into to the feature b
 - *Review the diff* just as you would for a regular commit.
 - Make a merge commit just like a regular commit, and push.
 
+## Git Large File Storage usage
+
+We use [Git LFS][GitLFS] to store assets.
+
+To clone our repositories with assets included, simply install Git LFS.
+
+To add assets:
+
+1. Ensure you have Git LFS installed.
+1. Remove the type of files you want to add from `.gitignore` if it is included there.
+1. Tell Git LFS to track the type of files you want to add if it is not already tracked:
+
+    ```sh
+    git lfs track '**.replace_with_your_file_extension'
+    ```
+
+1. Continue with ordinary Git workflow.
+
 [ConCom]: https://www.conventionalcommits.org/en/v1.0.0/
 [DefaultEditorGit]: https://stackoverflow.com/questions/2596805/how-do-i-make-git-use-the-editor-of-my-choice-for-editing-commit-messages
 [GitConflict]: https://git-scm.com/docs/git-merge#_how_conflicts_are_presented
+[GitLFS]: https://git-lfs.com/
