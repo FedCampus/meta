@@ -107,6 +107,8 @@ Ideally, a second person should review the Pull Request.
 
 When the Pull Request is ready and accepted, merge it by creating a merge commit. The commit message should still describe what the commit does, followed by the Pull Request number.
 
+If the Pull Request is especially messy—for example, it added many files and removed them later, prefer doing a squash merge instead.
+
 It is okay to just copy the name of the Pull Request and append the Pull Request number. For example, `Specify Git branch/merge rules for collaboration instruction #1`.
 
 ### Merge conflict
