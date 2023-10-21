@@ -151,6 +151,17 @@ To add assets:
 
 1. Continue with ordinary Git workflow.
 
+## Code Style
+
+- Code style is not for style. It is for maintainability. Do not nitpick code with identical functionality.
+- Shorter code is usually better, unless it takes longer to read asymptotically.
+- Code that hide important facts or create non-obvious control flows are bad.
+
+### Code Style Suggestions
+
+- Prefer immutable values and pure functions.
+- Reduce the amount of mutable states floating around (e.g. globals, classes).
+
 [ConCom]: https://www.conventionalcommits.org/en/v1.0.0/
 [DefaultEditorGit]: https://stackoverflow.com/questions/2596805/how-do-i-make-git-use-the-editor-of-my-choice-for-editing-commit-messages
 [GitConflict]: https://git-scm.com/docs/git-merge#_how_conflicts_are_presented
